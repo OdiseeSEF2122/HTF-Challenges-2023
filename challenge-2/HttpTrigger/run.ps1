@@ -15,7 +15,7 @@ param($Request, $TriggerMetadata)
 ## Start making changes from this point
 
 $url = "https://htfapi.azurewebsites.net/api/the-good-hearted-fella"
-$method = "GET"
+$method = "POST"
 $body = @{
     # Add a body here
 }
