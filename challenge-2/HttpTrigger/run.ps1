@@ -32,7 +32,7 @@ $teamId = $env:teamId
 $contentType = 'application/json'
 $headers = @{
     'Content-Type' = $contentType
-    '42679'    = $teamId
+    'x-team-id'    = $teamId
 }
 $finalUrl = $url + "?code=$teamId&clientId=$teamId"
 $response = Invoke-RestMethod -Method $method -Uri $finalUrl -Body $jsonBody -Headers $headers -ContentType $contentType
