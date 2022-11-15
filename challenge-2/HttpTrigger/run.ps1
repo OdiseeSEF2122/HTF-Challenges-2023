@@ -14,7 +14,7 @@ param($Request, $TriggerMetadata)
 
 ## Start making changes from this point
 
-$url = "REPLACEME"
+$url = "https://htfapi.azurewebsites.net/api/the-good-hearted-fella"
 $method = "GET"
 $body = @{
     # Add a body here
@@ -31,7 +31,7 @@ $teamId = $env:teamId
 $contentType = 'application/json'
 $headers = @{
     'Content-Type' = $contentType
-    'x-team-id'    = $teamId
+    '42679'    = $teamId
 }
 $finalUrl = $url + "?code=$teamId&clientId=$teamId"
 $response = Invoke-RestMethod -Method $method -Uri $finalUrl -Body $jsonBody -Headers $headers -ContentType $contentType
