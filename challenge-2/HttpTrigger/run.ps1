@@ -20,7 +20,7 @@ $body = @{
     # Add a body here
     "showYourInnerSelf" = $false
 }
-$jsonBody = $body | ConvertFrom-Json
+$jsonBody = $body | ConvertTo-Json
 
 
 
